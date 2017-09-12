@@ -18,6 +18,7 @@
     "serve-favicon": "~2.4.2"
   },
   "scripts": {
+    "start": "yarn build && yarn server",
     "server": "node ./server/bin/www",
     "client": "react-scripts start",
     "build": "react-scripts build",
