@@ -1,5 +1,7 @@
 var redis = require('redis');
-var client = redis.createClient();
+var client = redis.createClient({
+  url: process.env.REDIS_URL
+});
 var express = require('express');
 var router = express.Router();
 
