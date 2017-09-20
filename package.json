@@ -18,15 +18,15 @@
     "serve-favicon": "~2.4.2"
   },
   "scripts": {
-    "start": "yarn build && yarn server",
-    "server": "node ./server/bin/www",
-    "client": "react-scripts start",
+    "start": "yarn build && node ./server/bin/www",
+    "back": "node ./server/bin/www",
+    "front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://localhost:443",
   "engines": {
     "node": ">=8.2.1"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
