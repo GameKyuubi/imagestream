@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "yarn build && node ./server/bin/www",
-    "back": "node ./server/bin/www",
+    "back": "nodemon ./server/bin/www",
     "front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -28,5 +28,8 @@
   "engines": {
     "node": ">=8.2.1"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
